@@ -1,0 +1,147 @@
+/*project css*/
+.projects-box {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  border-radius:15px;
+  box-shadow: 0px 1px 15px 5px rgba(0,0,0,0.30);
+}
+.projects-box .portfolio-info {
+  width: 270px;
+  position: absolute;
+  bottom: 20px;
+  right: -270px;
+  z-index: 4;
+  opacity: 0;
+  transition: all 0.35s ease;
+  -webkit-transition: all 0.35s ease;
+  -moz-transition: all 0.35s ease;
+  -o-transition: all 0.35s ease;
+  -ms-transition: all 0.35s ease;
+}
+.projects-box .portfolio-info .portfolio-info-inner {
+  text-align: left;
+
+
+  padding: 15px 30px 10px 30px;
+  box-sizing: border-box;
+  background-color: #0039e4;
+  background-image: -moz-linear-gradient(90deg, #0039e4, #04dbf1);
+  background-image: -webkit-linear-gradient(90deg, #0039e4, #04dbf1);
+  background-image: linear-gradient(90deg, #0039e4, #04dbf1);
+  border-top-left-radius: 15px;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 15px;
+  -webkit-border-top-left-radius: 15px;
+  -webkit-border-top-right-radius: 0px;
+  -webkit-border-bottom-right-radius: 0px;
+  -webkit-border-bottom-left-radius: 15px;
+  -moz-border-radius-topleft: 15px;
+  -moz-border-radius-topright: 0px;
+  -moz-border-radius-bottomright: 0px;
+  -moz-border-radius-bottomleft: 15px;
+  box-shadow: 12px 12px 30px 0px rgba(0, 57, 228, 0.3);
+  -webkit-box-shadow: 12px 12px 30px 0px rgba(0, 57, 228, 0.3);
+  -moz-box-shadow: 12px 12px 30px 0px rgba(0, 57, 228, 0.3);
+}
+.projects-box .portfolio-info .portfolio-info-inner h5 a:hover, .projects-box .portfolio-info .portfolio-info-inner .portfolio-cates a:hover {
+  opacity: 0.8;
+}
+.projects-box .portfolio-info h5 {
+  color: #fff;
+  font-family: "Red Hat Text", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+  line-height: 1;
+}
+.projects-box .portfolio-info h5 a {
+  color: #fff;
+}
+.projects-box .portfolio-info .portfolio-cates {
+  color: #95e1fa;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 5px;
+}
+.projects-box .portfolio-info .portfolio-cates a {
+  color: #95e1fa;
+}
+.projects-box .portfolio-info .portfolio-cates span {
+  display: inline-block;
+  margin-left: 2px;
+  margin-right: 2px;
+}
+.projects-box .portfolio-info .portfolio-cates span:last-child {
+  display: none;
+}
+.projects-box:hover .portfolio-info {
+  right: 0px !important;
+  opacity: 1;
+}
+
+.projects-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  -webkit-transition: all 0.3s linear;
+  -moz-transition: all 0.3s linear;
+  -o-transition: all 0.3s linear;
+  -ms-transition: all 0.3s linear;
+  transition: all 0.3s linear;
+}
+.projects-box:hover img {
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+
+.projects-style-2 .projects-box {
+  border-bottom: 60px solid transparent;
+  overflow: visible;
+  border-bottom: 60px solid transparent;
+}
+.projects-style-2 .projects-box .portfolio-info {
+  opacity: 1;
+  right: 0px;
+  left: 0px;
+  bottom: -60px;
+  width: 100%;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+}
+.projects-style-2 .projects-box .portfolio-info .portfolio-info-inner {
+  width: 310px;
+  width: -webkit-calc(100% - 60px);
+  width: -moz-calc(100% - 60px);
+  width: calc(100% - 60px);
+  padding: 20px 10px 17px 10px;
+  margin: 0 auto;
+  background: #fff;
+  text-align: center;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  -webkit-border-top-left-radius: 15px;
+  -webkit-border-top-right-radius: 15px;
+  -webkit-border-bottom-right-radius: 15px;
+  -webkit-border-bottom-left-radius: 15px;
+  -moz-border-radius-topleft: 15px;
+  -moz-border-radius-topright: 15px;
+  -moz-border-radius-bottomright: 15px;
+  -moz-border-radius-bottomleft: 15px;
+  box-shadow: 8px 8px 30px 0px rgba(42, 67, 113, 0.15);
+  -webkit-box-shadow: 8px 8px 30px 0px rgba(42, 67, 113, 0.15);
+  -moz-box-shadow: 8px 8px 30px 0px rgba(42, 67, 113, 0.15);
+}
+
