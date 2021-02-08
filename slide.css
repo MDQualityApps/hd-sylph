@@ -144,4 +144,17 @@
   -webkit-box-shadow: 8px 8px 30px 0px rgba(42, 67, 113, 0.15);
   -moz-box-shadow: 8px 8px 30px 0px rgba(42, 67, 113, 0.15);
 }
+.cardtitle{
+text-align: left;
+ margin-left: 20%;
+ font-size: 20px;
+}
+.cardtext{
+  text-align: right;
+  margin-right: 20%;
+  
+}
+#why{
+  text-align: center;
 
+}
