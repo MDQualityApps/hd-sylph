@@ -1,160 +1,261 @@
-/*project css*/
-.projects-box {
-  position: relative;
-  display: block;
-  overflow: hidden;
-  border-radius:15px;
-  box-shadow: 0px 1px 15px 5px rgba(0,0,0,0.30);
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+
+html, body{
+  height: 100%;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  color:#222;
 }
-.projects-box .portfolio-info {
-  width: 270px;
+.navbar{
+  padding: .8rem;
+}
+.navbar-brand img{
+  width: 150px;
+  height: 70px;
+}
+.navbar-nav li{
+  padding-right: 20px;
+}
+.nav-link{
+  font-size: 1.1em !important;
+}
+.carousel-inner img{
+  width: 100%;
+}
+.carousel-caption {
   position: absolute;
-  bottom: 20px;
-  right: -270px;
-  z-index: 4;
-  opacity: 0;
-  transition: all 0.35s ease;
-  -webkit-transition: all 0.35s ease;
-  -moz-transition: all 0.35s ease;
-  -o-transition: all 0.35s ease;
-  -ms-transition: all 0.35s ease;
+  top: 50%;
+  transform: translateY(-50%);
 }
-.projects-box .portfolio-info .portfolio-info-inner {
-  text-align: left;
-
-
-  padding: 15px 30px 10px 30px;
-  box-sizing: border-box;
-  background-color: #0039e4;
-  background-image: -moz-linear-gradient(90deg, #0039e4, #04dbf1);
-  background-image: -webkit-linear-gradient(90deg, #0039e4, #04dbf1);
-  background-image: linear-gradient(90deg, #0039e4, #04dbf1);
-  border-top-left-radius: 15px;
-  border-top-right-radius: 0px;
-  border-bottom-right-radius: 0px;
-  border-bottom-left-radius: 15px;
-  -webkit-border-top-left-radius: 15px;
-  -webkit-border-top-right-radius: 0px;
-  -webkit-border-bottom-right-radius: 0px;
-  -webkit-border-bottom-left-radius: 15px;
-  -moz-border-radius-topleft: 15px;
-  -moz-border-radius-topright: 0px;
-  -moz-border-radius-bottomright: 0px;
-  -moz-border-radius-bottomleft: 15px;
-  box-shadow: 12px 12px 30px 0px rgba(0, 57, 228, 0.3);
-  -webkit-box-shadow: 12px 12px 30px 0px rgba(0, 57, 228, 0.3);
-  -moz-box-shadow: 12px 12px 30px 0px rgba(0, 57, 228, 0.3);
-}
-.projects-box .portfolio-info .portfolio-info-inner h5 a:hover, .projects-box .portfolio-info .portfolio-info-inner .portfolio-cates a:hover {
-  opacity: 0.8;
-}
-.projects-box .portfolio-info h5 {
-  color: #fff;
-  font-family: "Red Hat Text", sans-serif;
-  font-size: 20px;
-  font-weight: 500;
-  margin-bottom: 10px;
-  line-height: 1;
-}
-.projects-box .portfolio-info h5 a {
-  color: #fff;
-}
-.projects-box .portfolio-info .portfolio-cates {
-  color: #95e1fa;
-  font-family: "Red Hat Display", sans-serif;
-  font-weight: 700;
-  font-size: 13px;
+.carousel-caption h1 {
+  font-size: 500%;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  margin-bottom: 5px;
+  text-shadow: 1px 1px 10px #000;
 }
-.projects-box .portfolio-info .portfolio-cates a {
-  color: #95e1fa;
+.carousel-caption h3 {
+  font-size: 200%;
+  font-weight: 500;
+  text-shadow: 1px 1px 10px #000;
+  padding-bottom: 1rem;
 }
-.projects-box .portfolio-info .portfolio-cates span {
-  display: inline-block;
-  margin-left: 2px;
-  margin-right: 2px;
+.btn-primary {
+  background-color: #6648b1;
+  border: 1px solid #564d7c;
 }
-.projects-box .portfolio-info .portfolio-cates span:last-child {
-  display: none;
+.btn-primary:hover {
+  background-color: #563d7c;
+  border: 1px solid #563d7c;
 }
-.projects-box:hover .portfolio-info {
-  right: 0px !important;
-  opacity: 1;
+.jumbotron {
+  padding: 1rem;
+  border-radius: 0;
 }
-
-.projects-box img {
-  width: 100%;
-  height: auto;
-  display: block;
-  -webkit-transition: all 0.3s linear;
-  -moz-transition: all 0.3s linear;
-  -o-transition: all 0.3s linear;
-  -ms-transition: all 0.3s linear;
-  transition: all 0.3s linear;
-}
-.projects-box:hover img {
-  -webkit-transform: scale(1.05);
-  -moz-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  -o-transform: scale(1.05);
-  transform: scale(1.05);
-}
-
-.projects-style-2 .projects-box {
-  border-bottom: 60px solid transparent;
-  overflow: visible;
-  border-bottom: 60px solid transparent;
-}
-.projects-style-2 .projects-box .portfolio-info {
-  opacity: 1;
-  right: 0px;
-  left: 0px;
-  bottom: -60px;
-  width: 100%;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-}
-.projects-style-2 .projects-box .portfolio-info .portfolio-info-inner {
-  width: 310px;
-  width: -webkit-calc(100% - 60px);
-  width: -moz-calc(100% - 60px);
-  width: calc(100% - 60px);
-  padding: 20px 10px 17px 10px;
+.padding {
+  padding-bottom: 2rem;
+} 
+.welcome {
+  width: 75%;
   margin: 0 auto;
-  background: #fff;
-  text-align: center;
-  border-top-left-radius: 15px;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
-  border-bottom-left-radius: 15px;
-  -webkit-border-top-left-radius: 15px;
-  -webkit-border-top-right-radius: 15px;
-  -webkit-border-bottom-right-radius: 15px;
-  -webkit-border-bottom-left-radius: 15px;
-  -moz-border-radius-topleft: 15px;
-  -moz-border-radius-topright: 15px;
-  -moz-border-radius-bottomright: 15px;
-  -moz-border-radius-bottomleft: 15px;
-  box-shadow: 8px 8px 30px 0px rgba(42, 67, 113, 0.15);
-  -webkit-box-shadow: 8px 8px 30px 0px rgba(42, 67, 113, 0.15);
-  -moz-box-shadow: 8px 8px 30px 0px rgba(42, 67, 113, 0.15);
+  padding-top: 2rem;
 }
-.cardtitle{
-text-align: left;
- margin-left: 20%;
- font-size: 20px;
+.welcome hr {
+  border-top: 2px solid #b4b4b4;
+  width: 95%;
+  margin-top: .3rem;
+  margin-bottom: 1rem;
 }
-.cardtext{
-  text-align: right;
-  margin-right: 20%;
-  
+.fa-code {
+  color: #e54d26;
 }
-#why{
-  text-align: center;
+.fa-bold {
+  color: #563d7c;
+}
+.fa-css3 {
+  color: #2a63af;
+}
+.fa-code, .fa-bold, .fa-css3 {
+  font-size: 4em;
+  margin: 1rem;
+}
+.fun{
+  width: 100%;
+  margin-bottom: 2rem;
+}
+.gif {
+  max-width: 100%;
+}
+.social a {
+  font-size: 4.5em;
+  padding: 3rem;
+}
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-twitter {
+  color: #00aced;
+}
+.fa-google-plus-g {
+  color: #dd4b39;
+}
+.fa-instagram {
+  color: #517fa8;
+}
+.fa-youtube {
+  color: #bb0000;
+}
 
+.fa-facebook:hover,
+.fa-twitter:hover,
+.fa-google-plus-g:hover,
+.fa-instagram:hover,
+.fa-youtube:hover {
+  color: #d5d5d5;
 }
+
+hr.light {
+  border-top: 1px solid #d5d5d5;
+  width: 75%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+
+hr.light-100 {
+  border-top: 1px solid #d5d5d5;
+  width: 100%;
+  margin-top: .8rem;
+  margin-bottom: 1rem;
+}
+/*footer css*/
+.white-text{
+  color: white;
+}
+.list-unstyled li a{
+  color:white;
+  text-decoration: none;
+}
+
+/*end footer css*/
+
+/*---Media Queries --*/
+@media (max-width: 1500px){
+  .carousel-inner img{
+    width: 100%;
+    height: 550px;
+  }
+}
+
+@media (max-width: 992px) {
+  .social a{
+    font-size: 4em;
+    padding: 2rem;
+  }
+  .carousel-inner img{
+    width: 100%;
+    height: 400px;
+  }
+  }
+@media (max-width: 768px) {
+  .carousel-caption {
+    top: 45%;
+  }
+  .carousel-caption h1 {
+    font-size: 350%;
+  }
+  .carousel-caption h3 {
+    font-size: 140%;
+    font-weight: 400;
+    padding-bottom: 0.2rem;
+  }
+  .carousel-caption .btn {
+    font-size: 95%;
+    padding: 8px 14px;
+  }
+  .display-4 {
+    font-size: 200%;
+  } 
+  .display-4 {
+    font-size: 200%;
+  }
+  .social a{
+    font-size: 2.5em;
+    padding: 1.2rem;
+  }
+  .carousel-inner img{
+    width: 100%;
+    height: 100%;
+  }
+}
+@media (max-width: 576px) {
+  carousel-caption {
+    top: 40%;
+  }
+  .carousel-caption h1 {
+    font-size: 250%;
+  }
+  .carousel-caption h3 {
+    font-size: 110%;
+  }
+  .carousel-caption .btn {
+    font-size: 90%;
+    padding: 4px 8px;
+  }
+  .carousel-indicators {
+    display: none;
+  }
+  .display-4 {
+    font-size: 160%;
+  }
+  .social a{
+    font-size: 2em;
+    padding: 1.7rem;
+  }
+  .carousel-inner img{
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+
+/*---Firefox Bug Fix --*/
+.carousel-item {
+  transition: -webkit-transform 0.5s ease;
+  transition: transform 0.5s ease;
+  transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+  -webkit-backface-visibility: visible;
+  backface-visibility: visible;
+}
+
+/*--- Bootstrap Padding Fix --*/
+[class*="col-"] {
+    padding: 1rem;
+}
+
+
+
+
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
+
+
+
+
+
+
+
+
