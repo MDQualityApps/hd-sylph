@@ -11,11 +11,17 @@
 	<!-- <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
 	<!--add font link -->
 	<script src="https://kit.fontawesome.com/2789c06e83.js" crossorigin="anonymous"></script> 
-	
+	<!-- add a bootstrap for gallery part -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+
+<!-- end of bootstrap for gallery part  -->
+
 	<link href="css/style.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/slide.css">
  <link rel="stylesheet" type="text/css"	 href="css/why.css">
- 
+ <link rel="stylesheet" type="text/css" href="css/gallerycss.css">
+
 	<!-- <link rel="stylesheet" type="text/css" href="css/footer.css"> -->
 
 </head>
@@ -249,7 +255,98 @@
 	</div>
 </div>
 
+<!-- adding gallery bootstrap -->
+<div class="container bg-color">
+	
 
+        <div class="row">
+        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-12">
+            <h1 class="gallery-title">Gallery</h1>
+        </div>
+
+        
+           <div>
+          <button class="btn btn-default filter-button" data-filter="all">All</button>
+            <button class="btn btn-default filter-button" data-filter="hdpe">HDPE Pipes</button>
+            <button class="btn btn-default filter-button" data-filter="sprinkle">Sprinkle Pipes</button>
+            <button class="btn btn-default filter-button" data-filter="spray">Spray Nozzle</button>
+            <button class="btn btn-default filter-button" data-filter="irrigation">Irrigation Pipes</button>
+        </div>
+      
+         </div>   
+        <br>
+      
+
+           <div class="row"> 
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6  filter hdpe">
+                <img src="img/2.jpg" class="img-fluid">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter sprinkle">
+                <img src="img/2.jpg" class="img-fluid">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter hdpe">
+                <img src="img/2.jpg" class="img-thumbnail">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter irrigation">
+                <img src="img/2.jpg" class="img-thumbnail">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter spray">
+                <img src="img/2.jpg" class="img-thumbnail">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter irrigation">
+                <img src="img/2.jpg" class="img-thumbnail">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter spray">
+                <img src="img/2.jpg" class="img-thumbnail">
+            </div>
+
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter irrigation">
+                <img src="img/2.jpg" class="img-thumbnail">
+            </div>
+            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter irrigation">
+                <img src="img/2.jpg" class="img-thumbnail">
+            </div>
+            </div>
+           
+
+            
+    
+
+</div>
+<script>
+    $(document).ready(function(){
+
+    $(".filter-button").click(function(){
+        var value = $(this).attr('data-filter');
+        
+        if(value == "all")
+        {
+            //$('.filter').removeClass('hidden');
+            $('.filter').show('30000');
+        }
+        else
+        {
+//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
+//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
+            $(".filter").not('.'+value).hide('3000');
+            $('.filter').filter('.'+value).show('3000');
+            
+        }
+    });
+    
+    if ($(".filter-button").removeClass("active")) {
+$(this).removeClass("active");
+}
+$(this).addClass("active");
+});
+
+</script>
 
 
 <div class="container-fluid">
@@ -257,35 +354,35 @@
 	&nbsp;
 	&nbsp;
 	<div class="row">
-<div class="col-sm-4">	
+    <div class="col-sm-4">	
 
 	<!-- <div id="col1" class="column"> -->
 		<div class="badge"><img src="img/icons8-rocket-64.png"/>
-</div>
+      </div>
         <h4>Reliable Concern</h4>
          <p>We are recognized for our elegant construction style,we provide the best of services with skills that are at the pinnacle of the construction industry.</p>
 		<div class="badge"><img src="img/rupee.png"/>
-</div><h4>Competitive Price</h4>
+       </div><h4>Competitive Price</h4>
 			<p>We have created a niche in the sector for our on-time delivery, attractive adherence to quality norms and reasonable pricing policy. 
 			</p>	
         <div class="badge"><img src="img/icons8-male-user-64.png"/>
-</div>
+       </div>
         <h4>Friendly Support</h4>
 		<p>We provide functional & aesthetically pleasing designs,we have built the respect and trust that we continue to enjoy from the words of our clients.
 		</p>
-    </div>
+        </div>
 			
              <div class="col-sm-4">
 			<!-- <div id="col2" class="column"> -->
 			<div class="badge"><img src="img/time.png"/>
-</div>
+            </div>
 			<h4>Quality Works</h4>
 					
 			<p>We are a group of ARDENT, TALENTED & ENTHUSIASTIC minds who provides creative solutions and strive hard to deliver quality works. </p>
 
 		
 			<div class="badge"><img src="img/light.png"/>
-</div>
+        </div>
 			<h4>Create Design</h4>
 			<p class>We identify our clients’ requirements and provide unique and creative design solutions that makes it look both PRACTICAL& FABULOUS.</p>
 
@@ -296,17 +393,6 @@
 			</div>
 			</div>
 	      </div> 
-	
-
-       
-
- 
-
- 
-     
-  
-</div>
-</div>
 </div>
 <!--- Two Column Section -->
 <div class="container-fluid padding">
@@ -402,7 +488,7 @@
         <h6 class="text-uppercase font-weight-bold">Contact</h6>
         <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 75px; height: 2px">
           <ul class="list-unstyled">
-          	 <li class="my-2"><i class="fas fa-phone mr-3"></i> + 01 234 567 88</li>
+          	 <li class="my-2"><a href="https://www.mdqualityapps.com/"><i class="fas fa-phone mr-3"></i> + 01 234 567 88</a></li>
             <li class="my-2"><i class="fas fa-print mr-3"></i> + 01 234 567 89</li>
             <li class="my-2"><i class="fas fa-home mr-3"></i> Karachi, NY 10012, US</li>
             <li class="my-2"><i class="fas fa-envelope mr-3"></i> theproviders@gmail.com</li>
@@ -414,7 +500,7 @@
 
   <div class="footer-copyright text-center py-1 white-text" style="background-color:#000000">
     <p>&copy; Copyright
-    <a href="#">theprovider.com</a></p>
+    <a href="https://www.mdqualityapps.com/">mdqualityapps.com</a></p>
     <p>Designed by The Providers</p>
   </div>
 </footer>
