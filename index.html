@@ -8,21 +8,33 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-	<!-- <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script> -->
-	<!--add font link -->
+	
 	<script src="https://kit.fontawesome.com/2789c06e83.js" crossorigin="anonymous"></script> 
 	<!-- add a bootstrap for gallery part -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
 <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
 
 <!-- end of bootstrap for gallery part  -->
+<!-- add new portfolio   -->
+
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/2.2.2/isotope.pkgd.min.js'></script><script  src="./script.js"></script> 
+
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Parisienne&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700&display=swap" rel="stylesheet">
+
+<!-- end  portfolio   -->
+
 
 	<link href="css/style.css" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/slide.css">
- <link rel="stylesheet" type="text/css"	 href="css/why.css">
- <link rel="stylesheet" type="text/css" href="css/gallerycss.css">
+    <link rel="stylesheet" type="text/css"	 href="css/why.css">
+    <link rel="stylesheet" type="text/css" href="css/portfolio.css">
 
-	<!-- <link rel="stylesheet" type="text/css" href="css/footer.css"> -->
+	
 
 </head>
 <body>
@@ -98,65 +110,7 @@
 	</div>
 </div>
 
-<!--- Welcome Section -->
-<div class="container-fluid padding">
-	<div class="row welcome text-center">
-		<div class="col-12">
-			<h1 class="display-4">Built with ease.</h1>
-		</div>
-		<hr>
-		<div class="col-12">
-			<p class="lead">Welcome to my website tutorial!
-				Bootstrap is a free and open-source front-end library with HTML and
-				CSS based designs.</p>
-		</div>
-	</div>
-</div>
 
-<!--- Three Column Section -->
-<div class="container-fluid padding">
-	<div class="row text-center padding">
-		<div class="col-xs-12 col-sm-6 col-md-4">
-			<i class="fas fa-code"></i>
-			<h3>HTML5</h3>
-			<p>Built with the latest version of HTML, HTML5.</p>
-		</div>
-		<div class="col-xs-12 col-sm-6 col-md-4">
-			<i class="fas fa-bold"></i>
-			<h3>BOOTSTRAP</h3>
-			<p>Built with the latest version of Bootstrap, Bootstrap 4.</p>
-		</div>
-		<div class="col-xs-12 col-md-4">
-			<i class="fab fa-css3"></i>
-			<h3>CSS3</h3>
-			<p>Built with the latest version of CSS, CSS3.</p>
-		</div>
-	</div>
-	<hr class="my-4">
-</div>
-
-<!--- Two Column Section -->
-<div class="container-fluid padding">
-	<div class="row padding">
-		<div class="col-md-12 col-lg-6">
-			<h2>If you build it...</h2>
-			<p>The columns will automatically stack on each other when 
-				the screen is less than 576px wide.</p>
-			<p>Resize the browserwindow to see the effect. Responsive web 
-				design has become more important as the amount of mobile traffic now 
-				accounts for more than half of total internet traffic.</p>
-			<p>It can also display the web page differently depending on the 
-				screen size or viewing device.</p>
-				<br>
-				<a href="#" class="btn btn-primary">Learn More</a>
-		</div>
-		<div class="col-lg-6">
-			<img src="img/desk.png" class="img-fluid">
-		</div>
-	</div>
-</div>
-
-<hr class="my-4">
 
   
 <!--- Meet the team -->
@@ -255,99 +209,328 @@
 	</div>
 </div>
 
-<!-- adding gallery bootstrap -->
-<div class="container bg-color">
-	
+<!-- adding gallery portfolio-->
+<div>	
+<center><h1>OUR WORKS</h1> <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 150px; height: 2px"></center>
+</div>
+<section class="bg-colour">  
 
-        <div class="row">
-        <div class="gallery col-lg-12 col-md-12 col-sm-12 col-12">
-            <h1 class="gallery-title">Gallery</h1>
+
+    <div class="filters filter-button-group ">
+    <ul>
+        <li class="active"><a href="javascript:void(0);" data-filter="*">All</a></li>
+        <li><a href="javascript:void(0);" data-filter="bike">Construction</a></li>
+        <li><a href="javascript:void(0);" data-filter="bus">Interior</a></li>
+        <li><a href="javascript:void(0);" data-filter="car">Renovation</a></li>
+    </ul>
+</div>
+    <div id="container" class="isotope">
+<!--     1 -->
+        <div class="grid-item" data-filter="bike">
+        <a class="popupimg" href="img/construction-image/ivan-bandura-Wv2U24G2F78-unsplash.jpg">
+        <img src="img/construction-image/ivan-bandura-Wv2U24G2F78-unsplash.jpg">
+        </a>
+        <div class="overlay">construction</div>
         </div>
-
         
-           <div>
-          <button class="btn btn-default filter-button" data-filter="all">All</button>
-            <button class="btn btn-default filter-button" data-filter="hdpe">HDPE Pipes</button>
-            <button class="btn btn-default filter-button" data-filter="sprinkle">Sprinkle Pipes</button>
-            <button class="btn btn-default filter-button" data-filter="spray">Spray Nozzle</button>
-            <button class="btn btn-default filter-button" data-filter="irrigation">Irrigation Pipes</button>
+       <!--  2 -->
+        <div class="grid-item" data-filter="car">
+        <a class="popupimg" href="img/renovation-image/charles-deluvio-Za9oagRJNLM-unsplash (1).jpg">
+        <img src="img/renovation-image/charles-deluvio-Za9oagRJNLM-unsplash (1).jpg">
+        </a>
+        <div class="overlay">Renovation</div>
         </div>
-      
-         </div>   
-        <br>
-      
+        
+        <!-- 3 -->
+        <div class="grid-item" data-filter="bike">
+        <a class="popupimg" href="img/construction-image/brett-jordan-PFr50OBMowU-unsplash.jpg">
+        <img src="img/construction-image/brett-jordan-PFr50OBMowU-unsplash.jpg">
+        </a>     
+        <div class="overlay">Construction</div>
+        </div>
+        
+        <!-- 4 -->
+        <div class="grid-item" data-filter="car">
+        <a class="popupimg" href="img/renovation-image/kj-styles-eQ-8iUrb07g-unsplash.jpg">
+        <img src="img/renovation-image/kj-styles-eQ-8iUrb07g-unsplash.jpg">
+        </a>
+        <div class="overlay">Renovation</div>
+        </div>
+        
+        <!-- 5 -->
+        <div class="grid-item" data-filter="bike">
+        <a class="popupimg" href="img/construction-image/martin-widenka-qZ1duL3ItDI-unsplash.jpg">
+        <img src="img/construction-image/martin-widenka-qZ1duL3ItDI-unsplash.jpg">
+        </a>
+        <div class="overlay">construction</div>
+        </div>
+        
+        <!-- 6 -->
+        <div class="grid-item" data-filter="bus">
+        <a class="popupimg" href="img/interior-image/huy-nguyen-7LG4q-PP8ZQ-unsplash.jpg">
+        <img src="img/interior-image/huy-nguyen-7LG4q-PP8ZQ-unsplash.jpg">
+        </a>
+        <div class="overlay">Interior</div>
+        </div>
+        
+        <!-- 7 -->
+        <div class="grid-item" data-filter="bus">
+        <a class="img/interior-image/huy-nguyen-U6uoid9Z_d8-unsplash.jpg">
+        <img src="img/interior-image/huy-nguyen-U6uoid9Z_d8-unsplash.jpg">
+        </a>
+        <div class="overlay">Interior</div>
+        </div>
+        
+        <!-- 8 -->
+        <div class="grid-item" data-filter="car">
+        <a class="popupimg" href="img/renovation-image/nolan-issac-K5sjajgbTFw-unsplash.jpg">
+        <img src="img/renovation-image/nolan-issac-K5sjajgbTFw-unsplash.jpg">
+        </a>
+        <div class="overlay">Renovation</div>
+        </div>
+        
+       <!--  9 -->
+        <div class="grid-item" data-filter="bus">
+        <a class="popupimg" href="img/interior-image/visualsofdana-pP4RHq87C-k-unsplash.jpg">
+        <img src="img/interior-image/visualsofdana-pP4RHq87C-k-unsplash.jpg">
+        </a>
+        <div class="overlay">Interior</div>
+        </div>
+        <!-- 10 -->
+        <div class="grid-item" data-filter="car">
+        <a class="popupimg" href="img/renovation-image/dzha-hEXtDH-Dq-0-unsplash.jpg">
+        <img src="img/renovation-image/dzha-hEXtDH-Dq-0-unsplash.jpg">
+        </a>
+        <div class="overlay">Renovation</div>
+        </div>
+        
+       <!--  11 -->
+        <div class="grid-item" data-filter="car">
+        <a class="popupimg" href="img/renovation-image/charles-deluvio-DH-FZZ7kM5c-unsplash.jpg">
+        <img src="img/renovation-image/charles-deluvio-DH-FZZ7kM5c-unsplash.jpg">
+        </a>
+        <div class="overlay">Renovation</div>
+        </div>
+        
+        <!-- 12 -->
+        <div class="grid-item" data-filter="bike">
+        <a class="popupimg" href="img/construction-image/matias-santana-2ykXqiKHNfk-unsplash.jpg">
+        <img src="img/construction-image/matias-santana-2ykXqiKHNfk-unsplash.jpg">
+        </a>
+        <div class="overlay">Construction</div>
+        </div>
+        
+        <!-- 13 -->
+        <div class="grid-item" data-filter="car">
+        <a class="popupimg" href="img/renovation-image/charles-deluvio-xC3cHbp4XJE-unsplash.jpg">
+        <img src="img/renovation-image/charles-deluvio-xC3cHbp4XJE-unsplash.jpg">
+        </a>
+        <div class="overlay">Renovation</div>
+        </div>
+       <!--  14 -->
+        
+        
 
-           <div class="row"> 
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6  filter hdpe">
-                <img src="img/2.jpg" class="img-fluid">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter sprinkle">
-                <img src="img/2.jpg" class="img-fluid">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter hdpe">
-                <img src="img/2.jpg" class="img-thumbnail">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter irrigation">
-                <img src="img/2.jpg" class="img-thumbnail">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter spray">
-                <img src="img/2.jpg" class="img-thumbnail">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter irrigation">
-                <img src="img/2.jpg" class="img-thumbnail">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter spray">
-                <img src="img/2.jpg" class="img-thumbnail">
-            </div>
-
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter irrigation">
-                <img src="img/2.jpg" class="img-thumbnail">
-            </div>
-            <div class="gallery_product col-lg-4 col-md-4 col-sm-4 col-6 filter irrigation">
-                <img src="img/2.jpg" class="img-thumbnail">
-            </div>
-            </div>
-           
-
-            
+    </div>
+    
+    <div class="isotope-pager" style="padding-top: 15px; text-align:center;">
+        </div>
     
 
-</div>
-<script>
-    $(document).ready(function(){
 
-    $(".filter-button").click(function(){
-        var value = $(this).attr('data-filter');
-        
-        if(value == "all")
-        {
-            //$('.filter').removeClass('hidden');
-            $('.filter').show('30000');
-        }
-        else
-        {
-//            $('.filter[filter-item="'+value+'"]').removeClass('hidden');
-//            $(".filter").not('.filter[filter-item="'+value+'"]').addClass('hidden');
-            $(".filter").not('.'+value).hide('3000');
-            $('.filter').filter('.'+value).show('3000');
-            
+</section>
+<script>
+$(document).ready( function() {
+
+    var itemSelector = '.grid-item'; 
+
+    var $container = $('#container').isotope({
+        itemSelector: itemSelector,
+        masonry: {
+          columnWidth: itemSelector,
+          isFitWidth: true
         }
     });
+
+    //Ascending order
+    var responsiveIsotope = [
+        [480, 7],
+        [720, 10]
+    ];
+
+    var itemsPerPageDefault = 12;
+    var itemsPerPage = defineItemsPerPage();
+    var currentNumberPages = 1;
+    var currentPage = 1;
+    var currentFilter = '*';
+    var filterAtribute = 'data-filter';
+    var pageAtribute = 'data-page';
+    var pagerClass = 'isotope-pager';
+
+    function changeFilter(selector) {
+        $container.isotope({
+            filter: selector
+        });
+    }
+
+
+    function goToPage(n) {
+        currentPage = n;
+
+        var selector = itemSelector;
+            selector += ( currentFilter != '*' ) ? '['+filterAtribute+'="'+currentFilter+'"]' : '';
+            selector += '['+pageAtribute+'="'+currentPage+'"]';
+
+        changeFilter(selector);
+    }
+
+    function defineItemsPerPage() {
+        var pages = itemsPerPageDefault;
+
+        for( var i = 0; i < responsiveIsotope.length; i++ ) {
+            if( $(window).width() <= responsiveIsotope[i][0] ) {
+                pages = responsiveIsotope[i][1];
+                break;
+            }
+
+            
+
+        }
+
+        return pages;
+    }
     
-    if ($(".filter-button").removeClass("active")) {
-$(this).removeClass("active");
-}
-$(this).addClass("active");
+    function setPagination() {
+
+        var SettingsPagesOnItems = function(){
+
+            var itemsLength = $container.children(itemSelector).length;
+            
+            var pages = Math.ceil(itemsLength / itemsPerPage);
+            var item = 1;
+            var page = 1;
+            var selector = itemSelector;
+                selector += ( currentFilter != '*' ) ? '['+filterAtribute+'="'+currentFilter+'"]' : '';
+            
+            $container.children(selector).each(function(){
+                if( item > itemsPerPage ) {
+                    page++;
+                    item = 1;
+                }
+                $(this).attr(pageAtribute, page);
+                item++;
+            });
+
+            currentNumberPages = page;
+
+        }();
+
+        var CreatePagers = function() {
+
+            var $isotopePager = ( $('.'+pagerClass).length == 0 ) ? $('<div class="'+pagerClass+'"></div>') : $('.'+pagerClass);
+
+            $isotopePager.html('');
+            
+            for( var i = 0; i < currentNumberPages; i++ ) {
+                var $pager = $('<a href="javascript:void(0);" class="pager" '+pageAtribute+'="'+(i+1)+'"></a>');
+                    $pager.html(i+1);
+                    
+                    $pager.click(function(){
+                        var page = $(this).eq(0).attr(pageAtribute);
+                        goToPage(page);
+                    });
+
+                $pager.appendTo($isotopePager);
+            }
+
+            $container.after($isotopePager);
+
+        }();
+
+    }
+
+    setPagination();
+    goToPage(1);
+
+    //Adicionando Event de Click para as categorias
+    $('.filters a').click(function(){
+        var filter = $(this).attr(filterAtribute);
+        currentFilter = filter;
+
+        setPagination();
+        goToPage(1);
+
+
+    });
+
+    //Evento Responsivo
+    $(window).resize(function(){
+        itemsPerPage = defineItemsPerPage();
+        setPagination();
+    });
+
+    
+
 });
 
-</script>
 
+
+ $(document).ready( function() {   
+
+// filter items on button click
+$('.filter-button-group').on( 'click', 'li', function() {
+  var filterValue = $(this).attr('data-filter');
+  $('.grid').isotope({ filter: filterValue });
+  $('.filter-button-group li').removeClass('active');
+  $(this).addClass('active');
+});
+    })
+    
+
+ $(document).ready( function() {   
+
+// filter items on button click
+$('.isotope-pager').on( 'click', 'a', function() {
+  var filterValue = $(this).attr('data-page');
+
+  $('.isotope-pager a').removeClass('active');
+  $(this).addClass('active');
+});
+    })
+    
+    
+    
+    
+    
+    
+    
+
+$(document).ready(function(){
+$('.popupimg').magnificPopup({
+    type: 'image',
+  mainClass: 'mfp-with-zoom', 
+  gallery:{
+            enabled:true
+        },
+
+  zoom: {
+    enabled: true, 
+
+    duration: 300, // duration of the effect, in milliseconds
+    easing: 'ease-in-out', // CSS transition easing function
+
+    opener: function(openerElement) {
+
+      return openerElement.is('img') ? openerElement : openerElement.find('img');
+  }
+}
+
+});
+
+});
+</script>
+<!-- end gallery portfolio-->
+<br>
 
 <div class="container-fluid">
 	<center><h1>WHY CHOOSE US</h1 > </h1> <hr class="bg-success mb-4 mt-0 d-inline-block mx-auto" style="width: 200px; height: 4px">	</center>	
@@ -395,7 +578,7 @@ $(this).addClass("active");
 	      </div> 
 </div>
 <!--- Two Column Section -->
-<div class="container-fluid padding">
+<!-- <div class="container-fluid padding">
 	<div class="row padding">
 		<div class="col-md-12 col-lg-6">
 			<h2>Our Philosophy</h2>
@@ -418,7 +601,7 @@ $(this).addClass("active");
 </div>
 
 <!--- Connect -->
-<div class="container-fluid padding">
+<!-- <div class="container-fluid padding">
 	<div class="row text-center padding">
 		<div class="col-12">
 			<h2>Connect</h2>
@@ -431,7 +614,7 @@ $(this).addClass("active");
 			<a href="#"><i class="fab fa-youtube"></i></a>
 		</div>
 	</div>
-</div>
+</div>  -->
  
 <!-- footer -->
 <footer class="page-footer" style="background-color:#212121">
